@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./navbar.jsx";
 import Card from "./card.jsx";
 import Cuerpo from "./cuerpo.jsx";
+import Footer from "./footer.jsx";
 
 //create your first component
 const Home = () => {
