@@ -1,21 +1,42 @@
 import React from "react";
-import NavBar from "./navbar.jsx";
-import Card from "./card.jsx";
-import Cuerpo from "./cuerpo.jsx";
-import Footer from "./footer.jsx";
+
+//include images into your bundle
+import rigoImage from "../../img/rigo-baby.jpg";
+
+import NavBar from "./NavBar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="conteiner">
-			<NavBar />
-			<Card />
-			<Cuerpo
-				title="Ya empezamos con ReactJs"
-				text="Estamos cada vez más cerca de ser full stack software developers"
-				imageUrl="https://motor.elpais.com/wp-content/uploads/2018/11/tesla-roadster-000_1920x1600c-1800x728.jpg"
-			/>
-		</div>
+		<>
+			<div className="container-fluid">
+				<NavBar />
+
+				<Jumbotron />
+
+				<div className="row">
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+				</div>
+
+				<div className="row">
+					<Footer />
+				</div>
+			</div>
+		</>
 	);
 };
 

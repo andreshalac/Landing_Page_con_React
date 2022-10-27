@@ -1,18 +1,20 @@
 import React from "react";
+import img from "../../img/rigo-baby.jpg";
+import "../../styles/Card.css";
 
 const Card = () => {
 	return (
 		<div className="card">
+			<img src={img} className="card-img-top" alt="..." />
 			<div className="card-body">
-				<blockquote className="blockquote mb-0">
-					<p>Gracias por la paciencia Marcos</p>
-					<footer className="blockquote-footer">
-						Vamos a convertirnos en{"Full Stack Dev"}
-					</footer>
-				</blockquote>
-				<button type="button" className="btn btn-primary btn-lg">
-					button
-				</button>
+				<h5 className="card-title">Card title</h5>
+				<p className="card-text">
+					Some quick example text to build on the card title and make
+					up the bulk of the card's content.
+				</p>
+				<a href="#" className="btn btn-primary">
+					Go somewhere
+				</a>
 			</div>
 		</div>
 	);

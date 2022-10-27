@@ -1,0 +1,5 @@
+.container-enlaces-navbar{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+}
